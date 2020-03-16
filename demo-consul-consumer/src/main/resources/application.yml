@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: consul-consumer
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        serviceName: consul-consumer
+server:
+  port: 8765
