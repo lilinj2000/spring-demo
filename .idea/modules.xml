@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/demo-consul-consumer/demo-consul-consumer.iml" filepath="$PROJECT_DIR$/demo-consul-consumer/demo-consul-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-consul-provider/demo-consul-provider.iml" filepath="$PROJECT_DIR$/demo-consul-provider/demo-consul-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" filepath="$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-demo.iml" />
     </modules>
   </component>
