@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/demo-consul-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/demo-service-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/demo-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-oauth2/pom.xml" />
       </list>
     </option>
   </component>

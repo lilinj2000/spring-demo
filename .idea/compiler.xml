@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-consul-provider" />
+        <module name="demo-oauth2" />
         <module name="demo-service-gateway" />
         <module name="demo-consul-consumer" />
         <module name="demo-spring-security" />
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="demo-consul-consumer" target="1.8" />
       <module name="demo-consul-provider" target="1.8" />
+      <module name="demo-oauth2" target="1.8" />
       <module name="demo-service-gateway" target="1.8" />
       <module name="demo-spring-security" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-consul-consumer" options="-parameters" />
       <module name="demo-consul-provider" options="-parameters" />
+      <module name="demo-oauth2" options="-parameters" />
       <module name="demo-service-gateway" options="-parameters" />
       <module name="demo-spring-security" options="-parameters" />
     </option>
