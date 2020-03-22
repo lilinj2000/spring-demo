@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/demo-consul-provider/pom.xml" />
         <option value="$PROJECT_DIR$/demo-consul-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/demo-service-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-spring-security/pom.xml" />
       </list>
     </option>
   </component>
