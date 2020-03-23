@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-oauth2/demo-oauth2.iml" filepath="$PROJECT_DIR$/demo-oauth2/demo-oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" filepath="$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-spring-security/demo-spring-security.iml" filepath="$PROJECT_DIR$/demo-spring-security/demo-spring-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-user-service/demo-user-service.iml" filepath="$PROJECT_DIR$/demo-user-service/demo-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-demo.iml" filepath="$PROJECT_DIR$/.idea/spring-demo.iml" />
     </modules>
   </component>
