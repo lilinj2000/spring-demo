@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/demo-oauth2/pom.xml" />
         <option value="$PROJECT_DIR$/demo-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/demo-user-service/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-admin-server/pom.xml" />
       </list>
     </option>
   </component>

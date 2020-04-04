@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: admin-server
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        serviceName: admin-server
+        tags: user.name=${spring.security.user.name}, user.password=${spring.security.user.password}
+  boot:
+    admin:
+      discovery:
+        ignored-services: consul
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+server:
+  port: 8769
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
