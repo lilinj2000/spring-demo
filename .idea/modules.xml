@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo-admin-server/demo-admin-server.iml" filepath="$PROJECT_DIR$/demo-admin-server/demo-admin-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-consul-consumer/demo-consul-consumer.iml" filepath="$PROJECT_DIR$/demo-consul-consumer/demo-consul-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-consul-provider/demo-consul-provider.iml" filepath="$PROJECT_DIR$/demo-consul-provider/demo-consul-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo-hbase/demo-hbase.iml" filepath="$PROJECT_DIR$/demo-hbase/demo-hbase.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-jwt/demo-jwt.iml" filepath="$PROJECT_DIR$/demo-jwt/demo-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-oauth2/demo-oauth2.iml" filepath="$PROJECT_DIR$/demo-oauth2/demo-oauth2.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" filepath="$PROJECT_DIR$/demo-service-gateway/demo-service-gateway.iml" />

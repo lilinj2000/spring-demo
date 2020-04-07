@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/demo-admin-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-consul-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-consul-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-hbase/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-jwt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-oauth2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-service-gateway/src/main/java" charset="UTF-8" />

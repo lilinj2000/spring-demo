@@ -9,17 +9,19 @@
         <module name="demo-oauth2" />
         <module name="demo-user-service" />
         <module name="demo-consul-provider" />
-        <module name="demo-service-gateway" />
+        <module name="demo-spring-security" />
         <module name="demo-consul-consumer" />
         <module name="demo-admin-server" />
-        <module name="demo-spring-security" />
+        <module name="demo-service-gateway" />
         <module name="demo-jwt" />
+        <module name="demo-hbase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo-admin-server" target="1.8" />
       <module name="demo-consul-consumer" target="1.8" />
       <module name="demo-consul-provider" target="1.8" />
+      <module name="demo-hbase" target="1.8" />
       <module name="demo-jwt" target="1.8" />
       <module name="demo-oauth2" target="1.8" />
       <module name="demo-service-gateway" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="demo-admin-server" options="-parameters" />
       <module name="demo-consul-consumer" options="-parameters" />
       <module name="demo-consul-provider" options="-parameters" />
+      <module name="demo-hbase" options="-parameters" />
       <module name="demo-jwt" options="-parameters" />
       <module name="demo-oauth2" options="-parameters" />
       <module name="demo-service-gateway" options="-parameters" />
