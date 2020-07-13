@@ -1,0 +1,12 @@
+
+server:
+  port: 8212
+spring:
+  application:
+    name: demo-spring-hbase
+
+  data:
+    hbase:
+      confDir: /etc/hbase/conf
+      user: mica
+      ticketCache: /tmp/krb5cc_1002
