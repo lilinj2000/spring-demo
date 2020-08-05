@@ -32,23 +32,39 @@ public class HBaseUtil {
 
         try {
             UserGroupInformation.setConfiguration(conf);
-            UserGroupInformation.getUGIFromTicketCache("/tmp/krb5cc_0", "llj@TEST.COM");
+//            UserGroupInformation.getUGIFromTicketCache("/tmp/krb5cc_0", "llj@TEST.COM");
 //            UserGroupInformation.loginUserFromKeytab("hbase/_HOST@TEST.COM", "/etc/krb5.keytab");
-            UserGroupInformation loginUser = UserGroupInformation.getLoginUser();
-            user = User.create(loginUser);
-            conn = ConnectionFactory.createConnection(conf, user);
+//            UserGroupInformation loginUser = UserGroupInformation.getLoginUser();
+//            user = User.create(loginUser);
+//            conn = ConnectionFactory.createConnection(conf, user);
+            conn = ConnectionFactory.createConnection(conf);
             admin = conn.getAdmin();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private HBaseUtil () {
+    private HBaseUtil() {
         LOGGER.info("HBaseUtil be created!");
     }
 
     public static HBaseUtil getInstance() {
         return INSTANCE;
+    }
+
+    /**
+     * 关闭连接
+     *
+     * @throws IOException
+     */
+    public static void close() {
+        try {
+            conn.close();
+        } catch (IOException e) {
+            conn = null;
+        } finally {
+            conn = null;
+        }
     }
 
     public boolean tableExists(String tableName) {
@@ -83,20 +99,6 @@ public class HBaseUtil {
 
     public Admin getAdmin() {
         return admin;
-    }
-
-    /**
-     * 关闭连接
-     * @throws IOException
-     */
-    public static void close(){
-        try {
-            conn.close();
-        } catch (IOException e) {
-            conn = null;
-        }finally {
-            conn = null;
-        }
     }
 
 }
