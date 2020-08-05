@@ -1,6 +1,6 @@
 spring:
   datasource:
     hive: #hive数据源
-      url: jdbc:hive2://hog-vip01:10000/demo;principal=hive/hog-vip01.test.com@TEST.COM
+      jdbc-url: jdbc:hive2://hog-vip01:10000/demo;principal=hive/hog-vip01.test.com@TEST.COM
       driver-class-name: org.apache.hive.jdbc.HiveDriver
-      user: mica
+
