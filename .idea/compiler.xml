@@ -9,6 +9,7 @@
         <module name="demo-oauth2" />
         <module name="demo-user-service" />
         <module name="demo-consul-provider" />
+        <module name="demo-hive" />
         <module name="demo-spring-hbase" />
         <module name="demo-service-gateway" />
         <module name="demo-consul-consumer" />
@@ -23,6 +24,7 @@
       <module name="demo-consul-consumer" target="1.8" />
       <module name="demo-consul-provider" target="1.8" />
       <module name="demo-hbase" target="1.8" />
+      <module name="demo-hive" target="1.8" />
       <module name="demo-jwt" target="1.8" />
       <module name="demo-oauth2" target="1.8" />
       <module name="demo-service-gateway" target="1.8" />
@@ -37,6 +39,7 @@
       <module name="demo-consul-consumer" options="-parameters" />
       <module name="demo-consul-provider" options="-parameters" />
       <module name="demo-hbase" options="-parameters" />
+      <module name="demo-hive" options="-parameters" />
       <module name="demo-jwt" options="-parameters" />
       <module name="demo-oauth2" options="-parameters" />
       <module name="demo-service-gateway" options="-parameters" />

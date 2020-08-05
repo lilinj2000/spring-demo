@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/demo-admin-server/pom.xml" />
         <option value="$PROJECT_DIR$/demo-hbase/pom.xml" />
         <option value="$PROJECT_DIR$/demo-spring-hbase/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-hive/pom.xml" />
       </list>
     </option>
   </component>

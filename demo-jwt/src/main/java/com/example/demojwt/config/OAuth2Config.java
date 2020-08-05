@@ -13,10 +13,15 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFactory;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
 
 /**
  * Created by fangzhipeng on 2017/5/27.
@@ -24,15 +29,30 @@ import org.springframework.security.oauth2.provider.token.store.KeyStoreKeyFacto
 @Configuration
 @EnableAuthorizationServer
 public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
+
+    @Resource
+    private DataSource dataSource;
+
+    @Bean
+    public ClientDetailsService clientDetails() {
+
+        JdbcClientDetailsService jdbc_client = new JdbcClientDetailsService(dataSource);
+//        jdbc_client.setPasswordEncoder(new BCryptPasswordEncoder());
+
+        return jdbc_client;
+    }
+
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory()
-                .withClient("service-hi")
-                .secret("123456")
-                .scopes("service")
-                .autoApprove(true)
-                .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code")
-                .accessTokenValiditySeconds(12 * 300);//5min过期
+        clients.withClientDetails(clientDetails());
+
+//        clients.inMemory()
+//                .withClient("service-hi")
+//                .secret("123456")
+//                .scopes("service")
+//                .autoApprove(true)
+//                .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code")
+//                .accessTokenValiditySeconds(12 * 300);//5min过期
     }
 
     @Override
@@ -68,4 +88,6 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
         converter.setKeyPair(keyStoreKeyFactory.getKeyPair("fzp-jwt"));
         return converter;
     }
+
+
 }
