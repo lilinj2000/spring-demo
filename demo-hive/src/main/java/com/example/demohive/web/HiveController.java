@@ -1,13 +1,12 @@
 package com.example.demohive.web;
 
+import com.example.demohive.utils.HBaseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,6 +43,27 @@ public class HiveController {
 //        }
         return list;
 
+    }
+
+    @GetMapping("/hello")
+    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+        String msg = "";
+
+        boolean test_exist = HBaseUtil.getInstance().tableExists("test_table");
+        if (test_exist) {
+            msg = "test exist.";
+        } else {
+            msg = "test not exist.";
+        }
+
+        boolean city_exist = HBaseUtil.getInstance().tableExists("city");
+        if (city_exist) {
+            msg += " city exist";
+        } else {
+            msg += " city not exist";
+        }
+
+        return msg;
     }
 
 
